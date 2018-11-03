@@ -1,2 +1,2 @@
 # NetClip
-A GUI based application that allows you to store and recall data to the clipboard.
+A GUI based application that allows you to share your clipboard on the local network.
