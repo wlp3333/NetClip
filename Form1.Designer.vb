@@ -26,8 +26,8 @@ Partial Class Form1
         btnReceive = New Button()
         Label1 = New Label()
         txtNetworkPort = New TextBox()
-        RadioButton1 = New RadioButton()
-        RadioButton2 = New RadioButton()
+        rbIPv4 = New RadioButton()
+        rbIPv6 = New RadioButton()
         Label2 = New Label()
         txtDetectFreq = New TextBox()
         StatusStrip1 = New StatusStrip()
@@ -73,28 +73,28 @@ Partial Class Form1
         txtNetworkPort.Size = New Size(118, 23)
         txtNetworkPort.TabIndex = 3
         ' 
-        ' RadioButton1
+        ' rbIPv4
         ' 
-        RadioButton1.AutoSize = True
-        RadioButton1.Checked = True
-        RadioButton1.Location = New Point(12, 106)
-        RadioButton1.Name = "RadioButton1"
-        RadioButton1.Size = New Size(47, 19)
-        RadioButton1.TabIndex = 4
-        RadioButton1.TabStop = True
-        RadioButton1.Text = "IPv4"
-        RadioButton1.UseVisualStyleBackColor = True
+        rbIPv4.AutoSize = True
+        rbIPv4.Checked = True
+        rbIPv4.Location = New Point(12, 106)
+        rbIPv4.Name = "rbIPv4"
+        rbIPv4.Size = New Size(47, 19)
+        rbIPv4.TabIndex = 4
+        rbIPv4.TabStop = True
+        rbIPv4.Text = "IPv4"
+        rbIPv4.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton2
+        ' rbIPv6
         ' 
-        RadioButton2.AutoSize = True
-        RadioButton2.Enabled = False
-        RadioButton2.Location = New Point(83, 106)
-        RadioButton2.Name = "RadioButton2"
-        RadioButton2.Size = New Size(47, 19)
-        RadioButton2.TabIndex = 5
-        RadioButton2.Text = "IPv6"
-        RadioButton2.UseVisualStyleBackColor = True
+        rbIPv6.AutoSize = True
+        rbIPv6.Enabled = False
+        rbIPv6.Location = New Point(83, 106)
+        rbIPv6.Name = "rbIPv6"
+        rbIPv6.Size = New Size(47, 19)
+        rbIPv6.TabIndex = 5
+        rbIPv6.Text = "IPv6"
+        rbIPv6.UseVisualStyleBackColor = True
         ' 
         ' Label2
         ' 
@@ -161,8 +161,8 @@ Partial Class Form1
         Controls.Add(StatusStrip1)
         Controls.Add(txtDetectFreq)
         Controls.Add(Label2)
-        Controls.Add(RadioButton2)
-        Controls.Add(RadioButton1)
+        Controls.Add(rbIPv6)
+        Controls.Add(rbIPv4)
         Controls.Add(txtNetworkPort)
         Controls.Add(Label1)
         Controls.Add(btnReceive)
@@ -180,8 +180,8 @@ Partial Class Form1
     Friend WithEvents btnReceive As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents txtNetworkPort As TextBox
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents rbIPv4 As RadioButton
+    Friend WithEvents rbIPv6 As RadioButton
     Friend WithEvents Label2 As Label
     Friend WithEvents txtDetectFreq As TextBox
     Friend WithEvents StatusStrip1 As StatusStrip
