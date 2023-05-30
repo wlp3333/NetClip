@@ -1,0 +1,5 @@
+C:\Users\william\source\repos\NetClip\bin\Release\net6.0-windows\publish\NetClip.exe
+C:\Users\william\source\repos\NetClip\bin\Release\net6.0-windows\publish\NetClip.dll
+C:\Users\william\source\repos\NetClip\bin\Release\net6.0-windows\publish\NetClip.deps.json
+C:\Users\william\source\repos\NetClip\bin\Release\net6.0-windows\publish\NetClip.runtimeconfig.json
+C:\Users\william\source\repos\NetClip\bin\Release\net6.0-windows\publish\NetClip.pdb

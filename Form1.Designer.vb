@@ -22,28 +22,171 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Button1 = New Button()
+        btnSend = New Button()
+        btnReceive = New Button()
+        Label1 = New Label()
+        txtNetworkPort = New TextBox()
+        RadioButton1 = New RadioButton()
+        RadioButton2 = New RadioButton()
+        Label2 = New Label()
+        txtDetectFreq = New TextBox()
+        StatusStrip1 = New StatusStrip()
+        tsL1 = New ToolStripStatusLabel()
+        tsL2 = New ToolStripStatusLabel()
+        PictureBox1 = New PictureBox()
+        lblVersion = New Label()
+        StatusStrip1.SuspendLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
-        ' Button1
+        ' btnSend
         ' 
-        Button1.Location = New Point(12, 12)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(75, 23)
-        Button1.TabIndex = 0
-        Button1.Text = "Button1"
-        Button1.UseVisualStyleBackColor = True
+        btnSend.Location = New Point(12, 12)
+        btnSend.Name = "btnSend"
+        btnSend.Size = New Size(75, 23)
+        btnSend.TabIndex = 0
+        btnSend.Text = "Send"
+        btnSend.UseVisualStyleBackColor = True
+        ' 
+        ' btnReceive
+        ' 
+        btnReceive.Location = New Point(93, 12)
+        btnReceive.Name = "btnReceive"
+        btnReceive.Size = New Size(75, 23)
+        btnReceive.TabIndex = 1
+        btnReceive.Text = "Receive"
+        btnReceive.UseVisualStyleBackColor = True
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Location = New Point(12, 44)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(32, 15)
+        Label1.TabIndex = 2
+        Label1.Text = "Port:"
+        ' 
+        ' txtNetworkPort
+        ' 
+        txtNetworkPort.Location = New Point(50, 41)
+        txtNetworkPort.Name = "txtNetworkPort"
+        txtNetworkPort.Size = New Size(118, 23)
+        txtNetworkPort.TabIndex = 3
+        ' 
+        ' RadioButton1
+        ' 
+        RadioButton1.AutoSize = True
+        RadioButton1.Checked = True
+        RadioButton1.Location = New Point(12, 106)
+        RadioButton1.Name = "RadioButton1"
+        RadioButton1.Size = New Size(47, 19)
+        RadioButton1.TabIndex = 4
+        RadioButton1.TabStop = True
+        RadioButton1.Text = "IPv4"
+        RadioButton1.UseVisualStyleBackColor = True
+        ' 
+        ' RadioButton2
+        ' 
+        RadioButton2.AutoSize = True
+        RadioButton2.Enabled = False
+        RadioButton2.Location = New Point(83, 106)
+        RadioButton2.Name = "RadioButton2"
+        RadioButton2.Size = New Size(47, 19)
+        RadioButton2.TabIndex = 5
+        RadioButton2.Text = "IPv6"
+        RadioButton2.UseVisualStyleBackColor = True
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Location = New Point(12, 80)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(65, 15)
+        Label2.TabIndex = 6
+        Label2.Text = "Frequency:"
+        ' 
+        ' txtDetectFreq
+        ' 
+        txtDetectFreq.Location = New Point(83, 77)
+        txtDetectFreq.Name = "txtDetectFreq"
+        txtDetectFreq.Size = New Size(85, 23)
+        txtDetectFreq.TabIndex = 7
+        ' 
+        ' StatusStrip1
+        ' 
+        StatusStrip1.Items.AddRange(New ToolStripItem() {tsL1, tsL2})
+        StatusStrip1.Location = New Point(0, 130)
+        StatusStrip1.Name = "StatusStrip1"
+        StatusStrip1.Size = New Size(318, 22)
+        StatusStrip1.TabIndex = 8
+        StatusStrip1.Text = "StatusStrip1"
+        ' 
+        ' tsL1
+        ' 
+        tsL1.Name = "tsL1"
+        tsL1.Size = New Size(45, 17)
+        tsL1.Text = "Status: "
+        ' 
+        ' tsL2
+        ' 
+        tsL2.Name = "tsL2"
+        tsL2.Size = New Size(14, 17)
+        tsL2.Text = "X"
+        ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Image = My.Resources.Resources.netclip1
+        PictureBox1.Location = New Point(174, 12)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(132, 88)
+        PictureBox1.TabIndex = 9
+        PictureBox1.TabStop = False
+        ' 
+        ' lblVersion
+        ' 
+        lblVersion.AutoSize = True
+        lblVersion.Location = New Point(174, 108)
+        lblVersion.Name = "lblVersion"
+        lblVersion.Size = New Size(63, 15)
+        lblVersion.TabIndex = 10
+        lblVersion.Text = "Version 1.0"
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
-        Controls.Add(Button1)
+        ClientSize = New Size(318, 152)
+        Controls.Add(lblVersion)
+        Controls.Add(PictureBox1)
+        Controls.Add(StatusStrip1)
+        Controls.Add(txtDetectFreq)
+        Controls.Add(Label2)
+        Controls.Add(RadioButton2)
+        Controls.Add(RadioButton1)
+        Controls.Add(txtNetworkPort)
+        Controls.Add(Label1)
+        Controls.Add(btnReceive)
+        Controls.Add(btnSend)
         Name = "Form1"
-        Text = "Form1"
+        Text = "NetClip | Main"
+        StatusStrip1.ResumeLayout(False)
+        StatusStrip1.PerformLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnSend As Button
+    Friend WithEvents btnReceive As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents txtNetworkPort As TextBox
+    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents Label2 As Label
+    Friend WithEvents txtDetectFreq As TextBox
+    Friend WithEvents StatusStrip1 As StatusStrip
+    Friend WithEvents tsL1 As ToolStripStatusLabel
+    Friend WithEvents tsL2 As ToolStripStatusLabel
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents lblVersion As Label
 End Class
